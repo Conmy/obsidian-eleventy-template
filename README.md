@@ -21,14 +21,23 @@ Store static content from here. Eleventy will not process these files any furthe
 The place for all notes to live inside your Obsidian vault. These will be processed and turned into HTML
 posts by the eleventy processor before publishing.
 
+#### src/_includes
+
+This is a folder for eleventy templates. These can be referenced as layout templates in markdown front-matter
+to style and display site information in different ways.
+
+#### src/posts
+
+This is the main place to put notes while using Obsidian. These pages will be turned into HTML pages by
+eleventy during site pre-processing.
+
 ### templates
 
 A location for Obsidian template pages. These will not be hosted but can be used inside Obsidian
 to create notes pages.
 They can include front-matter that will be processed by Eleventy when it is creating the static site
 
-
-## Preview Site
+## :eyes: Preview The Site
 
 To preview what the site will look like, you can do the following:
 
