@@ -30,4 +30,4 @@ jobs:
     - name: Publish to GitHub Pages
       uses: actions/upload-pages-artifact
       with:
-        path: dist
+        path: ./dist
