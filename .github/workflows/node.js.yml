@@ -32,3 +32,4 @@ jobs:
       with:
         dir: dist
         branch: gh-pages
+        token: ${{ secrets.PUBLISH_GITHUB_PAGES_SECRET }}
