@@ -31,6 +31,6 @@ jobs:
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
       with:
         # The name of the directory that containing the content to be published
-        dir: dist/
+        dir: dist
         # The name of the remote branch that publishing source for GitHub Pages site
         branch: gh-pages
