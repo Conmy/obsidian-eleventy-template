@@ -28,8 +28,6 @@ jobs:
     - run: npm ci
     - run: npm run build
     - name: Publish to GitHub Pages
-      uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+      uses: actions/upload-pages-artifact
       with:
-        dir: dist
-        branch: gh-pages
-        token: ${{ secrets.PUBLISH_GITHUB_PAGES_SECRET }}
+        path: dist
