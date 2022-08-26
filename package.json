@@ -1,0 +1,30 @@
+{
+  "name": "handover_docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
+    "dev": "npm-run-all clean --parallel dev:*",
+    "build": "NODE_ENV=production npm-run-all clean build:eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty"
+  ],
+  "author": "i059151",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "@gardeners/markdown-it-wikilinks": "^1.5.1",
+    "markdown-it": "^13.0.1",
+    "markdown-it-emoji": "^2.0.2"
+  }
+}

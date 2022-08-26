@@ -1,0 +1,11 @@
+{
+  "userIgnoreFilters": [
+    "/^node_modules.*/",
+    "/^dist/"
+  ],
+  "newLinkFormat": "absolute",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src/posts",
+  "promptDelete": false,
+  "attachmentFolderPath": "/public"
+}

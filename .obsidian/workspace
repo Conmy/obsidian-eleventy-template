@@ -1,0 +1,136 @@
+{
+  "main": {
+    "id": "561620e04b2cf0bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "11fc0a20ea5cb470",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e931155347483bd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5283e1f310355c8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6a24a131c7cb038",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8d24ab1489e8a8bf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "de782196db301216",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c3d5723b3f3351eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8689fd0465368ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f7838003fb2540a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be6bab03fef81acf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5e2fe0362c604cf1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9860d0a93cab9e9c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "11fc0a20ea5cb470",
+  "lastOpenFiles": [
+    "src/css/delete_me.md",
+    "src/img/delete_me.md",
+    "src/posts/delete_me.md",
+    "src/About.md",
+    "src/Posts.md",
+    "src/Index.md",
+    "src/posts/More Info.md",
+    "src/posts/Jenkins.md",
+    "src/posts/Documentation.md",
+    "templates/Post Template.md"
+  ]
+}
