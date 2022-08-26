@@ -27,7 +27,24 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    - name: Publish to GitHub Pages
-      uses: actions/upload-pages-artifact@v1.0.3
+    - uses: actions/upload-pages-artifact@v1.0.3
       with:
         path: ./dist
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to Github pages
+      id: deployment
+      uses: action/deploy-pages@v1.0.10
