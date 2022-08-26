@@ -16,8 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [14.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -27,10 +26,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: npm run build
     - name: Publish to GitHub Pages
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
       with:
-        # The name of the directory that containing the content to be published
         dir: dist
-        # The name of the remote branch that publishing source for GitHub Pages site
         branch: gh-pages

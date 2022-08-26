@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "ci": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "dev:eleventy": "npx @11ty/eleventy --serve",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "dev": "npm-run-all clean --parallel dev:*",
