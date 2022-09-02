@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 const markdownIt = require('markdown-it');
 const markdownEmoji = require('markdown-it-emoji');
-const { execSync } = require('child_process');
+const repoName = require('git-repo-name');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -19,6 +19,8 @@ module.exports = function(eleventyConfig) {
     "woff2"
   ]);
 
+  const repo = repoName.sync();
+
   eleventyConfig.addPassthroughCopy("public");
 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
@@ -26,20 +28,23 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
-  let options = {
-    html: true
-  };
+  eleventyConfig.addGlobalData('pathPrefix', repo)
 
-  let wikiLinksOptions = {
+  const wikiLinks = require('@gardeners/markdown-it-wikilinks')({
+    baseURL: '/' + repo + '/',
+    relativeBaseURL: '/' + repo + '/',
     uriSuffix: '/index.html'
-  };
+  });
 
-  const wikiLinks = require('@gardeners/markdown-it-wikilinks')(wikiLinksOptions);
-
-  let markdownLibrary = markdownIt(options).use(wikiLinks).use(markdownEmoji);
+  const markdownLibrary = markdownIt({
+    html: true
+  })
+  .use(wikiLinks)
+  .use(markdownEmoji);
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
 
   eleventyConfig.addCollection("posts", function(collection) {
 
@@ -67,6 +72,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     htmlTemplateEngine: "njk",
+    pathPrefix: repo,
     dir: {
       input: 'src',
       includes: "_includes",

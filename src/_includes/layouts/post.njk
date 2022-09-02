@@ -19,13 +19,13 @@ templateClass: tmpl-home
     {% if prevPost.url %}
       <p>
         <strong>Previous post</strong>:
-        <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+        <a class="previous" href="/{{ pathPrefix }}{{ prevPost.url }}">{{ prevPost.data.title }}</a>
       </p>
     {% endif %}
     {% if nextPost.url %}
       <p>
         <strong>Next post</strong>:
-        <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        <a class="next" href="/{{ pathPrefix }}{{ nextPost.url }}">{{ nextPost.data.title }}</a>
       </p>
     {% endif %}
     </div>

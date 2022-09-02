@@ -4,11 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "11fc0a20ea5cb470",
+        "id": "001abd271fea5c81",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "src/posts/hello.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/posts/hello.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/posts/hello.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "src/posts/hello.md"
+              }
             }
           }
         ]
@@ -120,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "11fc0a20ea5cb470",
+  "active": "001abd271fea5c81",
   "lastOpenFiles": [
+    "src/posts/delete_me.md",
+    "src/posts/hello.md",
     "src/css/delete_me.md",
     "src/img/delete_me.md",
-    "src/posts/delete_me.md",
     "src/About.md",
     "src/Posts.md",
     "src/Index.md",
     "src/posts/More Info.md",
     "src/posts/Jenkins.md",
-    "src/posts/Documentation.md",
-    "templates/Post Template.md"
+    "src/posts/Documentation.md"
   ]
 }

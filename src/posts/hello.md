@@ -2,9 +2,9 @@
 tags:
 	- posts
 layout: layouts/post.njk
-title: delete_me
+title: hello
 date: 2022-08-26
 
 ---
 
-Delete this note and create your own.
+[[/posts/delete_me]]
